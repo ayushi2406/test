@@ -6,7 +6,6 @@ then write :wq to save changes
 
 commit -am to commit changes of an added file with message 
 
-
 git log -1 
 
 o/p 
