@@ -1,0 +1,22 @@
+edit in vim
+
+press i for inserting
+once done typing press esc
+then write :wq to save changes 
+
+commit -am to commit changes of an added file with message 
+
+
+git log -1 
+
+o/p 
+commit fbc572a80fd0803d4df3f300be0726d7e23ad437 (HEAD -> master)
+Author: shahkrima <krima.shah@ves.ac.in>
+Date:   Thu Mar 14 15:40:46 2019 +0530
+
+    modified
+
+
+git rev-parse HEAD
+o/p
+fbc572a80fd0803d4df3f300be0726d7e23ad437
