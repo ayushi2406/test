@@ -110,3 +110,30 @@ Date:   Thu Mar 14 15:12:46 2019 +0530
 commit ecf2cde319066a6976fe36fa3c9d146236bd23d9
 Author: shahkrima <krima.shah@ves.ac.in>
 :
+
+
+
+$mkdir diff_test_repo
+$ cd diff_test_repo
+$ touch diff_test.txt
+$ echo "this is a git diff test example" > diff_test.txt
+$ git init .
+Initialized empty Git repository in C:/Users/krima.nikesh.shah/Documents/test/diff_test_repo/.git/
+$ git add diff_test.txt
+warning: LF will be replaced by CRLF in diff_test.txt.
+The file will have its original line endings in your working directory
+$ git commit -am"add diff test file"
+[master (root-commit) 8ce7513] add diff test file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 diff_test.txt
+$ echo "this is a diff example" > diff_test.txt
+$ git diff
+warning: LF will be replaced by CRLF in diff_test.txt.
+The file will have its original line endings in your working directory
+diff --git a/diff_test.txt b/diff_test.txt
+index 6b0c6cf..b37e70a 100644
+--- a/diff_test.txt
++++ b/diff_test.txt
+@@ -1 +1 @@
+-this is a git diff test example
++this is a diff example
